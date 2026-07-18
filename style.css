@@ -774,3 +774,59 @@ a {
     gap: 1rem;
   }
 }
+
+/* Custom Invite Bot Disabled state with Red line strike-through and caption */
+.hero-actions-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.85rem;
+  margin-top: 1rem;
+}
+
+.btn-disabled {
+  position: relative;
+  opacity: 0.6;
+  cursor: not-allowed !important;
+  pointer-events: none;
+  background-color: var(--bg-tertiary) !important;
+  border-color: var(--border-color) !important;
+  color: var(--text-muted) !important;
+}
+
+.strike-text {
+  position: relative;
+  display: inline-block;
+}
+
+.strike-text::after {
+  content: '';
+  position: absolute;
+  left: -4px;
+  right: -4px;
+  top: 50%;
+  height: 2px;
+  background-color: var(--error);
+  transform: translateY(-50%);
+}
+
+.invite-caption {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--error);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+  .hero-actions-container {
+    width: 100%;
+  }
+  .hero-actions {
+    width: 100%;
+  }
+  .hero-actions .btn {
+    width: 100%;
+  }
+}
+
