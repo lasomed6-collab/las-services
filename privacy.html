@@ -1,42 +1,214 @@
-Last Updated: July 18, 2026
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Primary Meta Tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Privacy Policy — Las Services</title>
+    <meta name="description" content="Official Privacy Policy for Las Services. Understand what information we collect, how it is stored, and how you can request data deletion." />
+    <meta name="keywords" content="Las Services, privacy policy, bot privacy, discord bot privacy, data deletion request" />
+    <meta name="author" content="Las Services" />
+    <meta name="theme-color" content="#0a0a0c" />
 
-Las Services respects your privacy.
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="privacy.html" />
+    <meta property="og:title" content="Privacy Policy — Las Services" />
+    <meta property="og:description" content="Official Privacy Policy for Las Services. Understand what information we collect, how it is stored, and how you can request data deletion." />
 
-1. Information We Collect
-The Bot may collect:
-• Discord User IDs
-• Discord Server IDs
-• Channel IDs
-• Role IDs
-• Command usage
-• Ticket and moderation data (when applicable)
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
 
-We do not collect passwords or payment information through the Bot.
+    <!-- Header Navigation -->
+    <header class="navbar" id="header">
+      <div class="container navbar-container">
+        <a href="index.html#home" class="logo" aria-label="Las Services Home">
+          <span>Las Services</span><span class="logo-dot"></span>
+        </a>
+        
+        <!-- Mobile Menu Toggle Button -->
+        <button class="menu-trigger" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+        </button>
 
-2. Why We Collect Data
-We collect data only to:
-• Operate bot features
-• Process commands
-• Manage tickets
-• Store server settings
-• Improve reliability
+        <nav class="nav-links" id="nav-links">
+          <a href="index.html#home" class="nav-link">Home</a>
+          <a href="index.html#features" class="nav-link">Features</a>
+          <a href="index.html#info" class="nav-link">Bot Info</a>
+          <a href="terms.html" class="nav-link">Terms</a>
+          <a href="privacy.html" class="nav-link active">Privacy</a>
+        </nav>
+      </div>
+    </header>
 
-3. Data Sharing
-We do not sell or rent your personal information.
+    <!-- Main Content -->
+    <main>
+      
+      <!-- Docs Header -->
+      <header class="docs-header">
+        <div class="container">
+          <h1 class="docs-title">Privacy Policy</h1>
+          <p class="docs-meta">Last Updated: July 18, 2026</p>
+        </div>
+      </header>
 
-Data may only be shared when required by law.
+      <!-- Docs Body -->
+      <article class="docs-body container">
+        
+        <section class="docs-section">
+          <h2>1. Introduction</h2>
+          <p>
+            Your privacy is of critical importance to us. Las Services (hereinafter "the Bot") has established this Privacy Policy to explain what information we process, how we utilize and store that information, and how server administrators and users can exercise control over their personal records.
+          </p>
+          <p>
+            By adding the Bot to your server or interacting with its features, you consent to the processing patterns detailed in this document.
+          </p>
+        </section>
 
-4. Data Security
-We take reasonable measures to protect stored data. However, no system can guarantee absolute security.
+        <section class="docs-section">
+          <h2>2. Information Collected</h2>
+          <p>
+            To perform its operations, the Bot processes standard structured metadata transmitted through the official Discord API. This data includes:
+          </p>
+          <ul>
+            <li><strong>User Identifiers:</strong> Discord User IDs, usernames, and avatar hashes to identify users creating support tickets or performing administrative tasks.</li>
+            <li><strong>Guild Identifiers:</strong> Guild (Server) IDs and Role IDs to manage permissions, server configuration mappings, and log channels.</li>
+            <li><strong>Channel Identifiers:</strong> Ticket channel IDs, log channel IDs, and message IDs to direct ticket threads and update automated logs.</li>
+            <li><strong>Message & Support Log Content:</strong> Only text messages sent inside specific active ticket channels or logs. The Bot does NOT record or scan general, private, or off-ticket conversations.</li>
+            <li><strong>Action Timestamps:</strong> Timestamps associated with ticket creation, message updates, moderations, or command triggers for analytical logging.</li>
+          </ul>
+        </section>
 
-5. Data Removal
-Server owners may request removal of server-specific data by contacting Las Services.
+        <section class="docs-section">
+          <h2>3. How Information Is Used</h2>
+          <p>
+            The processed information is utilized strictly to provide, maintain, and support the requested services:
+          </p>
+          <ul>
+            <li>Providing ticket handling operations, routing transcripts, and forwarding support messages to active ticket channels.</li>
+            <li>Enforcing server-specific moderation parameters, auto-moderation rules, and logging action history as defined by guild admins.</li>
+            <li>Debugging internal errors, tracking rate-limiting triggers, and optimizing response latency.</li>
+            <li>Ensuring security and preventing abusive spam campaigns or unauthorized API commands.</li>
+          </ul>
+        </section>
 
-6. Children's Privacy
-The Bot is not intended for users under Discord's minimum age requirement.
+        <section class="docs-section">
+          <h2>4. Data Storage and Retention</h2>
+          <p>
+            We take data retention seriously and store only what is functionally necessary:
+          </p>
+          <ul>
+            <li><strong>Server Configurations:</strong> Saved in secure cloud-hosted configurations for as long as the Bot remains in your guild. If you kick the Bot, this configuration can be purged upon request.</li>
+            <li><strong>Ticket Transcripts:</strong> Saved securely inside our logs database. By default, transcripts are deleted after 30 days unless a longer or shorter retention period is configured by the server administration.</li>
+            <li><strong>Temporary Caching:</strong> User names and role lists are cached in memory for ephemeral command execution and automatically discarded shortly after.</li>
+          </ul>
+        </section>
 
-7. Changes
-This Privacy Policy may change over time. Updates will be posted with a revised date.
+        <section class="docs-section">
+          <h2>5. Data Security</h2>
+          <p>
+            We implement industry-standard technical measures to safeguard your information against unauthorized access, loss, alteration, or disclosure. All communication between our backend hosting server and the Discord API is encrypted in transit using Secure Sockets Layer (SSL/TLS). 
+          </p>
+          <p>
+            Access to server databases and configurations is restricted to authorized personnel strictly for development and critical debugging tasks.
+          </p>
+        </section>
 
-8. Contact
-Questions regarding this Privacy Policy may be directed to the Las Services Discord server.
+        <section class="docs-section">
+          <h2>6. Third-Party Services</h2>
+          <p>
+            Our infrastructure communicates with the Discord API. We do not sell, trade, or transfer your server details, user IDs, or ticket transcripts to outside third parties, advertisers, or analytics brokers.
+          </p>
+          <p>
+            Please note that your interaction with the Bot is also subject to the <a href="https://discord.com/privacy" target="_blank" rel="noopener noreferrer" style="text-decoration: underline;">Discord Privacy Policy</a>, which controls overall account telemetry and data processing within the Discord client application.
+          </p>
+        </section>
+
+        <section class="docs-section">
+          <h2>7. Cookies</h2>
+          <p>
+            This landing website is a static information resource. It does not utilize trackable advertising cookies, pixel tags, or long-term browser storage scripts.
+          </p>
+        </section>
+
+        <section class="docs-section">
+          <h2>8. Your Rights and Data Deletion</h2>
+          <p>
+            You hold total authority over your data. Under standard regulations (including GDPR and CCPA), you have the right to request access to, correction of, or permanent deletion of your data:
+          </p>
+          <ul>
+            <li><strong>Guild Purges:</strong> Guild owners can request full deletion of their server configurations and transcripts by submitting an inquiry to support.</li>
+            <li><strong>Individual Deletion:</strong> Users can request details about stored ticket logs containing their ID and prompt a purge.</li>
+          </ul>
+          <p>
+            To request data deletion, please join our Discord support guild or send an email through our primary administration channels.
+          </p>
+        </section>
+
+        <section class="docs-section">
+          <h2>9. Policy Updates</h2>
+          <p>
+            We may occasionally modify this Privacy Policy to align with new system enhancements, Discord guidelines, or legal compliance. When changes are made, the revision date at the top of this document will be updated. We encourage you to review this page periodically.
+          </p>
+        </section>
+
+        <section class="docs-section">
+          <h2>10. Contact Us</h2>
+          <p>
+            If you have any questions regarding this Privacy Policy or wish to file a data deletion request, please reach out through our official Discord community server.
+          </p>
+        </section>
+
+      </article>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-info">
+            <a href="index.html#home" class="logo" aria-label="Las Services Home">
+              <span>Las Services</span><span class="logo-dot"></span>
+            </a>
+            <p class="footer-desc text-secondary">
+              A professional Discord bot designed for service management, ticket routing, and comprehensive community automation.
+            </p>
+          </div>
+          <div class="footer-links-grid">
+            <div>
+              <h4 class="footer-links-title">Bot Navigation</h4>
+              <ul class="footer-links-list">
+                <li><a href="index.html#home" class="footer-link">Home</a></li>
+                <li><a href="index.html#features" class="footer-link">Features</a></li>
+                <li><a href="index.html#info" class="footer-link">Technical Specs</a></li>
+              </ul>
+            </div>
+            <div>
+              <h4 class="footer-links-title">Legal & Support</h4>
+              <ul class="footer-links-list">
+                <li><a href="terms.html" class="footer-link">Terms of Service</a></li>
+                <li><a href="privacy.html" class="footer-link">Privacy Policy</a></li>
+                <li><a href="#" class="footer-link">Contact Support</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© 2026 Las Services. All rights reserved.</p>
+          <p style="font-family: var(--font-mono); font-size: 0.75rem;">Build: stable-1.0.0</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" aria-label="Scroll back to top" id="back-to-top">
+      <span aria-hidden="true">↑</span>
+    </button>
+
+    <!-- Scripts -->
+    <script src="./script.js"></script>
+  </body>
+</html>
