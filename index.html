@@ -1,40 +1,236 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>Las Services</title>
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Primary Meta Tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Las Services — Official Discord Bot</title>
+    <meta name="description" content="Official website for Las Services, a clean and professional Discord bot designed for service management, automation, moderation, and support." />
+    <meta name="keywords" content="Discord, bot, Las Services, service bot, discord tickets, server automation, discord moderator" />
+    <meta name="author" content="Las Services" />
+    <meta name="theme-color" content="#0a0a0c" />
 
-<style>
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="#" />
+    <meta property="og:title" content="Las Services — Official Discord Bot" />
+    <meta property="og:description" content="Official website for Las Services, a clean and professional Discord bot designed for service management, automation, moderation, and support." />
+    <meta property="og:image" content="#" />
 
-body{
-background:#0d0d0d;
-font-family:Arial;
-color:white;
-text-align:center;
-padding-top:100px;
-}
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:title" content="Las Services — Official Discord Bot" />
+    <meta property="twitter:description" content="Official website for Las Services, a clean and professional Discord bot designed for service management, automation, moderation, and support." />
 
-a{
-display:block;
-margin:20px;
-color:#fff;
-font-size:22px;
-text-decoration:none;
-}
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
 
-</style>
+    <!-- Header Navigation -->
+    <header class="navbar" id="header">
+      <div class="container navbar-container">
+        <a href="#home" class="logo" aria-label="Las Services Home">
+          <span>Las Services</span><span class="logo-dot"></span>
+        </a>
+        
+        <!-- Mobile Menu Toggle Button -->
+        <button class="menu-trigger" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+        </button>
 
-</head>
+        <nav class="nav-links" id="nav-links">
+          <a href="#home" class="nav-link active">Home</a>
+          <a href="#features" class="nav-link">Features</a>
+          <a href="#info" class="nav-link">Bot Info</a>
+          <a href="terms.html" class="nav-link">Terms</a>
+          <a href="privacy.html" class="nav-link">Privacy</a>
+        </nav>
+      </div>
+    </header>
 
-<body>
+    <!-- Main Content -->
+    <main>
+      
+      <!-- Hero Section -->
+      <section class="hero section" id="home">
+        <div class="container">
+          <div class="hero-content">
+            <div class="hero-badge reveal">
+              <span class="hero-badge-dot"></span>
+              <span>100% Secure & Reliable</span>
+            </div>
+            <h1 class="hero-title reveal">Las Services</h1>
+            <p class="hero-description reveal">
+              A clean, professional Discord bot designed for managing services, customer support, automation, tickets, and moderation. Built to elevate server operations.
+            </p>
+            <div class="hero-actions reveal">
+              <a href="#" class="btn btn-primary" aria-label="Invite Las Services Bot to your server">Invite Bot</a>
+              <a href="#" class="btn btn-secondary" aria-label="Join our official Discord community support server">Join Discord</a>
+            </div>
+          </div>
+        </div>
+      </section>
 
-<h1>Las Services</h1>
+      <!-- Features Section -->
+      <section class="section" id="features" style="background-color: var(--bg-secondary); border-top: 1px solid var(--border-color);">
+        <div class="container">
+          <div class="section-header reveal">
+            <span class="section-subtitle">Core Capabilities</span>
+            <h2>Designed for Modern Servers</h2>
+            <p>Our features are developed with performance, accessibility, and high customizability in mind.</p>
+          </div>
 
-<p>Official Discord Service Bot</p>
+          <div class="features-grid">
+            
+            <!-- Ticket Management -->
+            <div class="feature-card reveal" id="feature-tickets">
+              <div class="feature-icon" aria-hidden="true">🎫</div>
+              <h3 class="feature-title">Ticket Management</h3>
+              <p class="feature-description">
+                Deploy robust interactive ticket channels with custom greetings, automated assignment, and secure transcripts for staff records.
+              </p>
+            </div>
 
-<a href="terms.html">Terms of Service</a>
+            <!-- Customer Support -->
+            <div class="feature-card reveal" id="feature-support">
+              <div class="feature-icon" aria-hidden="true">💬</div>
+              <h3 class="feature-title">Customer Support</h3>
+              <p class="feature-description">
+                Support and interact with your users smoothly with automated FAQs, reactive messaging systems, and customizable command outputs.
+              </p>
+            </div>
 
-<a href="privacy.html">Privacy Policy</a>
+            <!-- Moderation -->
+            <div class="feature-card reveal" id="feature-moderation">
+              <div class="feature-icon" aria-hidden="true">🛡️</div>
+              <h3 class="feature-title">Advanced Moderation</h3>
+              <p class="feature-description">
+                Maintain safety with full action logging, mute/kick/ban actions, and automated word filtering to foster a clean environment.
+              </p>
+            </div>
 
-</body>
+            <!-- Automation -->
+            <div class="feature-card reveal" id="feature-automation">
+              <div class="feature-icon" aria-hidden="true">⚙️</div>
+              <h3 class="feature-title">Smart Automation</h3>
+              <p class="feature-description">
+                Automate server greetings, assign roles dynamically on join, and trigger custom-tailored tasks with minimum setup.
+              </p>
+            </div>
+
+            <!-- Logging -->
+            <div class="feature-card reveal" id="feature-logging">
+              <div class="feature-icon" aria-hidden="true">📋</div>
+              <h3 class="feature-title">Comprehensive Logs</h3>
+              <p class="feature-description">
+                Track server updates including message edits, deletions, member joins/leaves, and mod actions in specific staff channels.
+              </p>
+            </div>
+
+            <!-- Utility Commands -->
+            <div class="feature-card reveal" id="feature-utility">
+              <div class="feature-icon" aria-hidden="true">🔧</div>
+              <h3 class="feature-title">Utility Commands</h3>
+              <p class="feature-description">
+                Incorporate powerful lookup functions, server statistics overlays, user history checking, and status checks instantly.
+              </p>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- Bot Info Section -->
+      <section class="section info-section" id="info">
+        <div class="container info-container">
+          <div class="info-content reveal">
+            <span class="section-subtitle">System Status</span>
+            <h2>Technical Details</h2>
+            <p>
+              Las Services is built utilizing robust language constructs and modern framework structures to ensure low latency and high uptime. Below is the active runtime profile.
+            </p>
+            <p class="text-muted" style="font-size: 0.9rem;">
+              Note: Technical values are subject to change as updates are continuously pushed to production.
+            </p>
+          </div>
+
+          <div class="info-list reveal">
+            <div class="info-item">
+              <div class="info-label">Bot Name</div>
+              <div class="info-value">Las Services</div>
+            </div>
+            <div class="info-item">
+              <div class="info-label">Language</div>
+              <div class="info-value">Python</div>
+            </div>
+            <div class="info-item">
+              <div class="info-label">Framework</div>
+              <div class="info-value">discord.py</div>
+            </div>
+            <div class="info-item">
+              <div class="info-label">Version</div>
+              <div class="info-value">1.0.0</div>
+            </div>
+            <div class="info-item">
+              <div class="info-label">Customizable ID</div>
+              <div class="info-value editable">las-services-id-editable</div>
+            </div>
+            <div class="info-item">
+              <div class="info-label">Server Clusters</div>
+              <div class="info-value editable">multi-shard-active</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-info">
+            <a href="#home" class="logo" aria-label="Las Services Home">
+              <span>Las Services</span><span class="logo-dot"></span>
+            </a>
+            <p class="footer-desc text-secondary">
+              A professional Discord bot designed for service management, ticket routing, and comprehensive community automation.
+            </p>
+          </div>
+          <div class="footer-links-grid">
+            <div>
+              <h4 class="footer-links-title">Bot Navigation</h4>
+              <ul class="footer-links-list">
+                <li><a href="#home" class="footer-link">Home</a></li>
+                <li><a href="#features" class="footer-link">Features</a></li>
+                <li><a href="#info" class="footer-link">Technical Specs</a></li>
+              </ul>
+            </div>
+            <div>
+              <h4 class="footer-links-title">Legal & Support</h4>
+              <ul class="footer-links-list">
+                <li><a href="terms.html" class="footer-link">Terms of Service</a></li>
+                <li><a href="privacy.html" class="footer-link">Privacy Policy</a></li>
+                <li><a href="#" class="footer-link">Contact Support</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© 2026 Las Services. All rights reserved.</p>
+          <p style="font-family: var(--font-mono); font-size: 0.75rem;">Build: stable-1.0.0</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" aria-label="Scroll back to top" id="back-to-top">
+      <span aria-hidden="true">↑</span>
+    </button>
+
+    <!-- Scripts -->
+    <script src="./script.js"></script>
+  </body>
 </html>
